@@ -1,0 +1,348 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     color: black;
+     text-align: center;
+ }
+
+ img {
+     width: 160px;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ #Home {
+     height: 100vh;
+     width: 100wh;
+ }
+
+ .nav {
+     width: 100vw;
+     height: 70px;
+     background-color: #d9f5dfce;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+ }
+
+ .nav .nav_ul1 ul li,
+ .nav .nav_ul2 ul li {
+     font-size: 18px;
+     list-style: none;
+     display: inline-flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     padding: 15px;
+     margin: 0 30px;
+ }
+
+ .nav .nav_ul1 li :hover {
+     color: #3e7e55;
+     font-weight: bold;
+ }
+
+ .nav .nav_ul2 li :hover {
+     color: #3e7e55;
+     font-weight: bold;
+ }
+
+ .nav .nav_ul1 {
+     width: 60%;
+
+ }
+
+ .nav .nav_ul2 {
+     width: calc(100% - 60%);
+ }
+
+ .hero {
+     height: 100%;
+     width: 100%;
+     background-image:url('/assets/images/l3.jpg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .hero h1 {
+     height: max-content;
+     background-color: #d9f5df6c;
+     border-radius: 5px;
+     padding: 20px;
+ }
+
+ @media screen and (max-width : 730px) {
+
+     .nav {
+         height: max-content;
+         flex-direction: column;
+     }
+
+     .nav .nav_ul1 ul li,
+     .nav .nav_ul2 ul li {
+         flex-wrap: nowrap;
+         padding: 5px;
+         margin: 5px 5px;
+     }
+ }
+
+ #About,
+ #Specializations,
+ #Plans {
+     background-color: #aadcb6;
+ }
+
+ #Services,
+ #Teachers,
+ #Contact {
+     background-color: #7abd87;
+ }
+
+ #About {
+     height: max-content;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 100px 0px;
+ }
+
+ #About p {
+     width: 70%;
+     padding-top: 30px;
+ }
+
+ #Specializations,
+ #Teachers,
+ #Plans,
+ #Contact {
+     height: max-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 20px;
+ }
+
+ #Services {
+     height: max-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 0px;
+ }
+
+ #Specializations .contaner {
+     height: 100%;
+     padding: 20px 0px;
+     display: inline-flex;
+ }
+
+ #Plans .contaner {
+     display: inline-flex;
+ }
+
+ #Plans .contaner .card {
+     width: 220px;
+ }
+
+ #Services .contaner .card,
+ #Specializations .contaner .card,
+ #Plans .contaner .card {
+     background-color: #d4ddc9;
+
+ }
+
+ #Services .contaner {
+     display: inline-flex;
+ }
+
+ #Services .contaner {
+     display: inline-flex;
+ }
+
+ #Services .contaner .card {
+     width: 300px;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 5px;
+ }
+
+ #Specializations .contaner .card {
+     width: 300px;
+     border-radius: 5px;
+     padding: 20px;
+     margin: 10px;
+ }
+
+ #Teachers .contaner .card {
+     padding: 0px;
+     margin: 0px;
+ }
+
+ #Teachers .contaner {
+     height: 100%;
+     display: flex;
+ }
+
+ #Services .contaner .card p,
+ #Specializations .contaner .card p {
+     padding-top: 20px;
+ }
+
+ #Teachers .contaner .card {
+     border-radius: 5px;
+     padding: 0px 10px;
+     margin-top: 20px;
+ }
+
+ #Teachers .contaner .card p {
+     padding: 10px;
+     width: 250px;
+ }
+
+ #Plans {
+     padding: 30px 0px 10px 0px;
+ }
+
+ #Plans .contaner .card {
+     height: max-content;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 10px;
+ }
+
+ #Plans .contaner .card ul,
+ #Plans .contaner .card h3,
+ #Plans .contaner .card img {
+     padding-bottom: 10px;
+ }
+
+ #Plans .contaner .card div p {
+     text-align: left;
+ }
+
+ #Plans .contaner .card ul {
+     padding-left: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+ }
+
+ #Plans .contaner .card div {
+     border: 2px solid #3e7e55;
+     border-radius: 6px;
+     padding: 10px;
+     background-color: #8acf98d7;
+ }
+
+ #Contact form {
+     display: inline-flex;
+     flex-direction: column;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+ }
+
+ #Contact form .input,
+ #Contact form textarea {
+     width: 100%;
+     height: max-content;
+     text-align: left;
+     border: none;
+     outline: none;
+     border-radius: 3px;
+     padding: 4px;
+ }
+
+ #Contact form label {
+     height: max-content;
+     text-align: left;
+     margin: 2px;
+ }
+
+ button {
+     width: 100%;
+     height: max-content;
+     border-radius: 5px;
+     border: none;
+     padding: 10px 0;
+     margin: 10px 0;
+ }
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .block{
+    display:inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+#footer .block .media{
+    display: flex;
+}
+
+#footer .block .media :nth-child(2){
+    margin: 0px 10px;
+}
+#footer .media :hover {
+    color: #3e7e55;
+    font-weight: bold;
+}
+
+ @media screen and (max-width :1265px) {
+     #Services .contaner {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ }
+
+ @media screen and (max-width : 950px) {
+     #Specializations .contaner {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ }
+
+ @media screen and (max-width : 775px) {
+     #Teachers .contaner {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ }
+
+ @media screen and (max-width : 680px) {
+     #Plans .contaner {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ }
+
+ @media screen and (max-width : 520px) {
+    #footer .block {
+        height: max-content;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+ 
+ @media screen and (max-width :300px) {
+
+    #Services .contaner .card,
+    #Specializations .contaner .card {
+        width: 100%;
+        margin: 10px 20px;
+    }
+
+}
